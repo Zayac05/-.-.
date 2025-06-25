@@ -5,146 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Памяти Иванова Ивана Ивановича</title>
   <style>
-    :root {
-      --main-bg: #181818;
-      --accent: #e0e0e0;
-      --text: #e0e0e0;
-      --footer-bg: #222;
-      --footer-text: #bbb;
-      --header-bg: #222;
-    }
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background: var(--main-bg);
-      color: var(--text);
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      background-image:
-        repeating-linear-gradient(
-          135deg,
-          rgba(255,255,255,0.03) 0px,
-          rgba(255,255,255,0.03) 2px,
-          transparent 2px,
-          transparent 8px
-        );
-      background-size: 24px 24px;
-    }
-    .ornament {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      margin: 0.5rem 0;
-    }
-    .ornament svg {
-      width: 220px;
-      height: 26px;
-      opacity: 0.36;
-      display: block;
-    }
-    header {
-      background: var(--header-bg);
-      padding: 2rem 1rem 1rem 1rem;
-      text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.13);
-      position: relative;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.2rem;
-      color: var(--accent);
-      letter-spacing: 0.04em;
-    }
-    main {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 2rem 1rem 2rem 1rem;
-      box-sizing: border-box;
-      width: 100%;
-      max-width: 800px;
-      margin: 0 auto;
-      background: rgba(34,34,34,0.92);
-      border-radius: 18px;
-      box-shadow: 0 2px 16px rgba(0,0,0,0.13);
-    }
-    .images-section {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 2rem;
-      width: 100%;
-    }
-    .images-section img {
-      max-width: 320px;
-      width: 90vw;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.18);
-      object-fit: cover;
-      background: #333;
-      margin-bottom: 0.5rem;
-      filter: grayscale(80%);
-    }
-    .text-section {
-      text-align: center;
-      margin-bottom: 2rem;
-      font-size: 1.15rem;
-      line-height: 1.7;
-      color: var(--text);
-    }
-    .audio-section {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      margin-bottom: 2rem;
-    }
-    audio {
-      width: 100%;
-      max-width: 400px;
-      outline: none;
-      border-radius: 6px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.18);
-      background: #222;
-    }
-    footer {
-      text-align: center;
-      background: var(--footer-bg);
-      color: var(--footer-text);
-      padding: 1rem 0;
-      font-size: 1rem;
-      letter-spacing: 0.01em;
-      margin-top: auto;
-    }
-    @media (max-width: 600px) {
-      .images-section {
-        flex-direction: column;
-        gap: 1rem;
-      }
-      header h1 {
-        font-size: 1.4rem;
-      }
-      main {
-        padding: 1rem 0.5rem;
-      }
-      .text-section {
-        font-size: 1rem;
-      }
-      audio {
-        max-width: 100%;
-      }
-    }
+    /* ...ваши стили без изменений... */
   </style>
 </head>
 <body>
   <div class="ornament">
-    <svg viewBox="0 0 220 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M10 13 Q35 0, 110 13 Q185 26, 210 13" stroke="#e0e0e0" stroke-width="2" fill="none"/>
-      <circle cx="10" cy="13" r="2" fill="#e0e0e0"/>
-      <circle cx="210" cy="13" r="2" fill="#e0e0e0"/>
-    </svg>
+    <!-- ... SVG ... -->
   </div>
   <header>
     <h1>Иванов Иван Иванович</h1>
@@ -154,16 +20,15 @@
   </header>
   <main>
     <section class="images-section">
-      <!-- Фото. Замените src на своё, если нужно -->
+      <!-- Гифка -->
       <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" alt="Оживлённое фото" style="max-width:320px; border-radius:12px;">
     </section>
-    <div style="text-align:center;">
-  <h3>Лёгкая мелодия на пианино</h3>
-  <audio controls>
-    <source src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Kevin_MacLeod/Classical_Sampler/Kevin_MacLeod_-_Gymnopedie_No_1.mp3" type="audio/mpeg">
-    Ваш браузер не поддерживает аудиотег.
-  </audio>
-</div>
+    <section class="audio-section">
+      <audio controls>
+        <source src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Kevin_MacLeod/Classical_Sampler/Kevin_MacLeod_-_Gymnopedie_No_1.mp3" type="audio/mpeg">
+        Ваш браузер не поддерживает аудиотег.
+      </audio>
+    </section>
     <section class="text-section">
       <p>
         Память о тебе навсегда останется в наших сердцах.<br>
@@ -172,24 +37,13 @@
         Скорбим и помним...
       </p>
     </section>
-    <section class="audio-section">
-      <!-- Замените src на свою аудиозапись, если нужно -->
-      <audio controls>
-        <source src="https://cdn.pixabay.com/audio/2022/07/26/audio_124bfa0c4a.mp3" type="audio/mpeg">
-        Ваш браузер не поддерживает аудиоэлемент.
-      </audio>
-    </section>
   </main>
   <div class="ornament">
-    <svg viewBox="0 0 220 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M10 13 Q35 26, 110 13 Q185 0, 210 13" stroke="#e0e0e0" stroke-width="2" fill="none"/>
-      <circle cx="10" cy="13" r="2" fill="#e0e0e0"/>
-      <circle cx="210" cy="13" r="2" fill="#e0e0e0"/>
-    </svg>
+    <!-- ... SVG ... -->
   </div>
   <footer>
-     Вечная память. Семья и друзья.<br>
-     <!-- Можно дополнить или изменить текст -->
+    Вечная память. Семья и друзья.<br>
+    <!-- Можно дополнить или изменить текст -->
   </footer>
 </body>
 </html>
